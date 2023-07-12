@@ -12,4 +12,4 @@ WORKDIR /app
 COPY --from=BUILD /app/out/bin/zep /app/
 
 EXPOSE 8000
-ENTRYPOINT ["/app/zep", "--config", "/app/zep/config.yaml"]
+ENTRYPOINT ["/app/zep", "--config", "/app/zep"]
